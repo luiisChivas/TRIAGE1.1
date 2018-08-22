@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hospital.IncomeTab.VitalSignsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_vital_signs"
+                android:textSize="25dp"/>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fc" />
+
+                <EditText
+                    android:id="@+id/edtFc"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x_min" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fr" />
+
+                <EditText
+                    android:id="@+id/edtFr"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x_min" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/temperature" />
+
+                <EditText
+                    android:id="@+id/edtTem"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/degress_celsius"/>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ta_systolic" />
+
+                <EditText
+                    android:id="@+id/edtTaSis"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mm_hg" />
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ta_diastolic" />
+
+                <EditText
+                    android:id="@+id/edtTaDi"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mm_hg" />
+            </GridLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:text="@string/glasgow_neurological_states"
+                android:textSize="20dp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/ocular_opening" />
+
+                <EditText
+                    android:id="@+id/edtAo"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"/>
+
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="43dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/mas2"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:onClick="click"/>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/verbal_response" />
+
+                <EditText
+                    android:id="@+id/edtRv"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"/>
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="43dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/mas2"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:onClick="verbalResponse"/>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/motor_response" />
+
+                <EditText
+                    android:id="@+id/edtRm"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"/>
+                <TextView
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_width="43dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/mas2"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:onClick="motorResponse"/>
+            </GridLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/total" />
+
+                <EditText
+                    android:id="@+id/edtTotal"
+                    android:layout_width="87dp"
+                    android:editable="false"
+                    android:layout_height="wrap_content" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnGuardarSignos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/btn_sig"
+                android:textStyle="bold"
+                android:background="@drawable/rounded_button_next"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

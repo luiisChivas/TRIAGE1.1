@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_income_tab"
+            android:icon="@drawable/fic"
+            android:title="@string/income_tab" />
+        <item
+            android:id="@+id/nav_show_record"
+            android:icon="@drawable/b1"
+            android:title="@string/show_record" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/video" />
+        <item
+            android:id="@+id/nav_list_user"
+            android:icon="@drawable/ic_users"
+            android:title="@string/list_user" />
+        <item
+            android:id="@+id/nav_list_legend"
+            android:icon="@drawable/ic_legends"
+            android:title="@string/list_legend"/>
+        <item
+            android:id="@+id/nav_list_level"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="@string/list_level"/>
+        <item
+            android:id="@+id/nav_list_disease"
+            android:icon="@drawable/ic_enfermedad"
+            android:title="@string/list_disease" />
+        <item
+            android:id="@+id/nav_list_patient"
+            android:icon="@drawable/ic_pacientes"
+            android:title="@string/waiting_patients" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_acerca"
+            android:title="@string/about"/>
+        <item
+            android:id="@+id/nav_user_online"
+            android:icon="@drawable/ic_users"
+            android:title="@string/users_online"/>
+        <item
+            android:id="@+id/nav_show_book"
+            android:icon="@drawable/ic_ver"
+            android:title="@string/show_book"/>
+
+        <item
+            android:id="@+id/nav_clasification_level"
+            android:icon="@drawable/ic_clasificacion"
+            android:title="@string/clasification_level"/>
+        <item
+            android:id="@+id/nav_list_symptom"
+            android:icon="@drawable/ic_sintoma"
+            android:title="@string/list_symptom"/>
+        <item
+            android:id="@+id/nav_you_know"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/str_you_know"/>
+
+        <item
+            android:id="@+id/nav_close"
+            android:icon="@drawable/cerras"
+            android:title="@string/close_session" />
+
+    </group>
+
+
+</menu>
